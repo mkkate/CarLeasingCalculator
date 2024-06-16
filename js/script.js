@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     DownPaymentRange
   );
 
-  setLabelText(
+  setCarValueLabelText(
     document.getElementById("carValueLabel"),
     "Car Value",
     CarValueRange

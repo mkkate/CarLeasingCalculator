@@ -5,8 +5,9 @@ function setInputAttributes(element, range) {
   element.step = range.STEP;
 }
 
-// sets label text
-function setLabelText(labelElement, text, range) {
+// sets car value label text
+function setCarValueLabelText(labelElement, text, range) {
+  // function setLabelText(labelElement, text, range) {
   labelElement.innerText = `${text} (€${range.MIN.toLocaleString()} - €${range.MAX.toLocaleString()}):`;
 }
 
