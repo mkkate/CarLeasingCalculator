@@ -1,0 +1,10 @@
+#leaseForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-column {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+}
