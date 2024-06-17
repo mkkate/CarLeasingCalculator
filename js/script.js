@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   populateLeasePeriodDropdown();
 
+  updateValues();
+
+  // adding event listeners
   const carValueRange = document.getElementById("carValueRange");
   const carValueText = document.getElementById("carValueText");
   const leasePeriodDropdown = document.getElementById("leasePeriodDropdown");
@@ -47,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
     syncRangeWithText(downPaymentText, downPaymentRange)
   );
 
-  document.getElementById("carType").addEventListener("change", updateValues);
+  carValueText.addEventListener("input", validateCarValueInput);
 
-  updateValues();
+  downPaymentText.addEventListener("input", validateDownPaymentInput);
+
+  document.getElementById("carType").addEventListener("change", updateValues);
 });
