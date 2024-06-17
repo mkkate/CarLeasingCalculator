@@ -22,3 +22,4 @@ All the .js files are grouped into **js** folder, for better code maintainance:
 - **rangeTextSyncs.js** - holds functions for syncing text inputs with slider outputs and vice versa, slider inputs with text outputs
 - **script.js** - holds form initialization
 - **setters.js** - holds functions for dynamicaly setting values from enums and label text with range for "Car Value" and "Down Payment"
+- **validation.js** - holds validation functions for user inputs ("Car Value" and "Down Payment")
